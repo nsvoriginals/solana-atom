@@ -6,6 +6,7 @@ import { Dashboard } from "./pages/WalletDashboard";
 import { WalletGenerator } from "./pages/WalletGenator";
 import { TokenLaunchpad } from "./pages/TokenLaunchpad";
 import { WalletContext } from "./WalletProvider";
+import { Faucet } from "./pages/SolanaFaucet";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark"  >
@@ -19,8 +20,9 @@ function App() {
         <TokenLaunchpad>
 
 </TokenLaunchpad>
-        
+<Faucet/>
         </WalletContext>
+    
       </div>
     </ThemeProvider>
   );

@@ -80,7 +80,7 @@ export const TokenLaunchpad = () => {
           Create Token
         </Button>
       </div>
-      <TokenCard name="Solana" symbol="SOL" supply="500,000" decimals={9} />
+      
     </div>
   );
 };
