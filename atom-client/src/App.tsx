@@ -8,11 +8,12 @@ import { TokenLaunchpad } from "./pages/TokenLaunchpad";
 import { WalletContext } from "./WalletProvider";
 import { Faucet } from "./pages/SolanaFaucet";
 import { Landing } from "./pages/LandingPage";
+import { Navbar } from "./components/custom/Navbar";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark"  >
       <div className="flex flex-col items-center justify-center min-h-screen ">
-        <h1 className="text-2xl font-bold">Theme Toggle Example</h1>
+        <Navbar></Navbar>
         <ModeToggle />
         <Landing></Landing>
     
