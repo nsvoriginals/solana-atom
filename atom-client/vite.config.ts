@@ -1,11 +1,22 @@
 import path from "path"
-import tailwindcss from "@tailwindcss/vite"
+
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
-
+import Unfonts from 'unplugin-fonts/vite';
+import {nodePolyfills} from 'vite-plugin-node-polyfills'
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(),
+    nodePolyfills(),
+    ,Unfonts({
+      custom:{
+        families:{
+          name:'Nue',
+          src:'./public/fonts/nue.otf',
+        }
+      }
+    })
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
