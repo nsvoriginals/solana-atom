@@ -13,7 +13,7 @@ export function ModeToggle() {
   const { setTheme, theme } = useTheme();
 
   return (
-    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
+    <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50 font-PPmori">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -29,8 +29,8 @@ export function ModeToggle() {
             <span className="sr-only">Toggle theme</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end" className="ml-2">
-          <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuContent align="end" className="ml-2 font-PPmori">
+          <DropdownMenuItem  onClick={() => setTheme("light")}>
             Light
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setTheme("dark")}>

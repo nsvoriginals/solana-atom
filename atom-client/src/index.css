@@ -18,6 +18,11 @@
   src: url('/fonts/nokia.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'PPmori';
+  src: url('/fonts/ppmori.otf') format('opentype');
+}
+
 
 ::-webkit-scrollbar {
   width: 8px; 
