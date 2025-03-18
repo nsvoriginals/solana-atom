@@ -16,7 +16,7 @@ function App() {
         <Navbar></Navbar>
         <ModeToggle />
         <Landing></Landing>
-    <h1>Hi Test commit </h1>
+    <h1>Hi Test commit 22 </h1>
       </div>
     </ThemeProvider>
   );
